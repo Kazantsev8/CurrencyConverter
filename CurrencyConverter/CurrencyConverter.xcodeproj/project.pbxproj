@@ -11,7 +11,38 @@
 		2C8209DE285512D1001D0769 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8209DD285512D1001D0769 /* ViewController.swift */; };
 		2C8209E3285512D9001D0769 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C8209E2285512D9001D0769 /* Assets.xcassets */; };
 		2C8209E6285512D9001D0769 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8209E4285512D9001D0769 /* LaunchScreen.storyboard */; };
+		2CDD497A2857C0D0005DCB6D /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CDD49792857C0D0005DCB6D /* RxCocoa.framework */; platformFilter = ios; };
+		2CDD497B2857C0D0005DCB6D /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2CDD49792857C0D0005DCB6D /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2CDD49822857C18C005DCB6D /* RxTest.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CDD497D2857C18C005DCB6D /* RxTest.xcframework */; };
+		2CDD49832857C18C005DCB6D /* RxTest.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2CDD497D2857C18C005DCB6D /* RxTest.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2CDD49842857C18C005DCB6D /* RxBlocking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CDD497E2857C18C005DCB6D /* RxBlocking.xcframework */; };
+		2CDD49852857C18C005DCB6D /* RxBlocking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2CDD497E2857C18C005DCB6D /* RxBlocking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2CDD49862857C18C005DCB6D /* RxCocoa.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CDD497F2857C18C005DCB6D /* RxCocoa.xcframework */; };
+		2CDD49872857C18C005DCB6D /* RxCocoa.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2CDD497F2857C18C005DCB6D /* RxCocoa.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2CDD49882857C18C005DCB6D /* RxRelay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CDD49802857C18C005DCB6D /* RxRelay.xcframework */; };
+		2CDD49892857C18C005DCB6D /* RxRelay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2CDD49802857C18C005DCB6D /* RxRelay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2CDD498A2857C18C005DCB6D /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CDD49812857C18C005DCB6D /* RxSwift.xcframework */; };
+		2CDD498B2857C18C005DCB6D /* RxSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2CDD49812857C18C005DCB6D /* RxSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2CDD497C2857C0D0005DCB6D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2CDD497B2857C0D0005DCB6D /* RxCocoa.framework in Embed Frameworks */,
+				2CDD49872857C18C005DCB6D /* RxCocoa.xcframework in Embed Frameworks */,
+				2CDD49852857C18C005DCB6D /* RxBlocking.xcframework in Embed Frameworks */,
+				2CDD498B2857C18C005DCB6D /* RxSwift.xcframework in Embed Frameworks */,
+				2CDD49892857C18C005DCB6D /* RxRelay.xcframework in Embed Frameworks */,
+				2CDD49832857C18C005DCB6D /* RxTest.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2C8209D6285512D1001D0769 /* CurrencyConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +51,12 @@
 		2C8209E2285512D9001D0769 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C8209E5285512D9001D0769 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C8209E7285512D9001D0769 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CDD49792857C0D0005DCB6D /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		2CDD497D2857C18C005DCB6D /* RxTest.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxTest.xcframework; path = Carthage/Build/RxTest.xcframework; sourceTree = "<group>"; };
+		2CDD497E2857C18C005DCB6D /* RxBlocking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxBlocking.xcframework; path = Carthage/Build/RxBlocking.xcframework; sourceTree = "<group>"; };
+		2CDD497F2857C18C005DCB6D /* RxCocoa.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxCocoa.xcframework; path = Carthage/Build/RxCocoa.xcframework; sourceTree = "<group>"; };
+		2CDD49802857C18C005DCB6D /* RxRelay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxRelay.xcframework; path = Carthage/Build/RxRelay.xcframework; sourceTree = "<group>"; };
+		2CDD49812857C18C005DCB6D /* RxSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxSwift.xcframework; path = Carthage/Build/RxSwift.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +64,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CDD497A2857C0D0005DCB6D /* RxCocoa.framework in Frameworks */,
+				2CDD49862857C18C005DCB6D /* RxCocoa.xcframework in Frameworks */,
+				2CDD49842857C18C005DCB6D /* RxBlocking.xcframework in Frameworks */,
+				2CDD498A2857C18C005DCB6D /* RxSwift.xcframework in Frameworks */,
+				2CDD49882857C18C005DCB6D /* RxRelay.xcframework in Frameworks */,
+				2CDD49822857C18C005DCB6D /* RxTest.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +81,7 @@
 			children = (
 				2C8209D8285512D1001D0769 /* CurrencyConverter */,
 				2C8209D7285512D1001D0769 /* Products */,
+				2CDD49782857BB0E005DCB6D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +105,19 @@
 			path = CurrencyConverter;
 			sourceTree = "<group>";
 		};
+		2CDD49782857BB0E005DCB6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CDD497E2857C18C005DCB6D /* RxBlocking.xcframework */,
+				2CDD497F2857C18C005DCB6D /* RxCocoa.xcframework */,
+				2CDD49802857C18C005DCB6D /* RxRelay.xcframework */,
+				2CDD49812857C18C005DCB6D /* RxSwift.xcframework */,
+				2CDD497D2857C18C005DCB6D /* RxTest.xcframework */,
+				2CDD49792857C0D0005DCB6D /* RxCocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,6 +128,7 @@
 				2C8209D2285512D1001D0769 /* Sources */,
 				2C8209D3285512D1001D0769 /* Frameworks */,
 				2C8209D4285512D1001D0769 /* Resources */,
+				2CDD497C2857C0D0005DCB6D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -274,6 +332,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y8GJSR9MXQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CurrencyConverter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -301,6 +363,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y8GJSR9MXQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CurrencyConverter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
